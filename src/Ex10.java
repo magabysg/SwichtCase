@@ -7,17 +7,20 @@ public class Ex10 {
         Scanner sc = new Scanner(System.in);
         int i = 1;
 
-        IO.println("\nEscolha entre as opções do menu administrativo: ");
+        IO.println("\nCadastrar usuario, digite seu nome e senha: ");
+        String nome = sc.next();
+        int senha = sc.nextInt();
 
         do {
+            IO.println("\nEscolha entre as opções do menu administrativo: ");
             IO.println("1- Cadastrar usuário" + "\n2- Listar usuários" + "\n3- Atualizar usuário" + "\n4- Excluir usuário" + "\n5- Encerrar sistema");
             int escolha = sc.nextInt();
 
             switch (escolha){
                 case 1:
                     IO.println("\nCadastrar usuario, digite seu nome e senha: ");
-                    String nome = sc.next();
-                    int senha = sc.nextInt();
+                    nome = sc.next();
+                    senha = sc.nextInt();
                     i = 1;
                     break;
                 case 2:
